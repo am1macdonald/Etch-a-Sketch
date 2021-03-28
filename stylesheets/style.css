@@ -9,18 +9,38 @@
     background-color: red;
     position:absolute;
     margin:0;
-    height:50vh;
-    width: 50vw;
+    min-height: 660px;
+    min-width: 880px;
+
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
     text-align: center;
 }
 
 #game-grid-frame{
-    position: relative;
-    background-color: grey;
-    height: 80%;
+    position: absolute;
+    background-color: purple;
+    height: 70%;
     width: 80%;
-    margin-top: 5%;
+    margin: 0;
+    padding: 0;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#game-grid-frame{
+    padding:0;
+    margin: 0;
+    background-color: aqua;
+    opacity: 0.8;
+}
+#game-frame-bottom{
+    background-color: rebeccapurple;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }

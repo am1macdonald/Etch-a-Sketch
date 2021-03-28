@@ -1,0 +1,26 @@
+#background-div{
+    background-color: black;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+
+}
+#game-frame{
+    background-color: red;
+    position:absolute;
+    margin:0;
+    height:50vh;
+    width: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#game-grid-frame{
+    position: relative;
+    background-color: grey;
+    height: 80%;
+    width: 80%;
+    margin-top: 5%;
+}

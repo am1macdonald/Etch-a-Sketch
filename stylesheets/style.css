@@ -9,8 +9,8 @@
     background-color: red;
     position:absolute;
     margin:0;
-    min-height: 660px;
-    min-width: 880px;
+    min-height:75vmin;
+    min-width:100vmin;
 
 
     top: 50%;
@@ -39,16 +39,14 @@
     opacity: 0.8;
 }
 #game-frame-bottom{
-    background-color: rebeccapurple;
-    width: 800px;
+    /*background-color: rebeccapurple;*/
+    width: 90vmin;
     height: auto;
     position: absolute;
-    bottom: 20px;
+    bottom: -2vmin;
     left: 0;
-
-    padding: 0 40px 0 40px;
-    margin: 5px 5px 5px 0;
-
+    padding: 5vmin 5vmin 0 5vmin;
+    margin: 5vmin 3vmin 3vmin 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,14 +58,14 @@
     height: 80px;
     border-radius: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .knob>.inner{
     background-color: rgb(175, 99, 49);
     position: absolute;
     width: 50px;
     height: 50px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    border-radius: 50%;
 }

@@ -8,22 +8,18 @@
 </head>
 <body>
     <header style="display: none;"></header>
-    <main>
-        <div id="popup">
-            <Span>How many squares do you want?</Span>
-            <form>
-                <input type="text" name="num" id="num" placeholder="Enter size of grid..." />
-                <input type="submit" value="OK"></input>
-            </form>
-        </div>
+    <main>        
         <div id="background-div">
-            background-div
             <div id="game-frame">
-                game-frame
                 <div id="game-grid-frame">
-                    game-grid-frame
+                    <div id="popup">
+                        <Span>What size grid do you want?</Span>
+                        <form>
+                            <input type="text" name="num" id="grid-size-input" placeholder="2-64" />
+                            <input id="submit" value="Start"></input>
+                        </form>
+                    </div>
                     <div id="game-grid">
-                        game-grid
                     </div>
                 </div>
                 <div id="game-frame-bottom">
@@ -32,7 +28,7 @@
                         </div>
                     </div>
                     <div id="game-name">
-                        <span>Sketchy</span>
+                        <button id="reset">Sketchy</button>
                     </div>
                     <div class="knob">
                         <div class="inner">

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheets\reset.css">
     <link rel="stylesheet" href="stylesheets\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header style="display: none;"></header>
@@ -16,6 +20,21 @@
                         <Span id="popup-text">Please enter desired grid dimension <br> and click start to begin!</Span>
                         <div id="popup-form">
                             <input type="text" name="num" id="grid-size-input" placeholder="2-64 squared" />
+                            <div id="color-choice">
+                                <input type="radio" id="black" name="color" value="black">
+                                <label for="black">Black</label>
+                                <input type="radio" id="rgb" name="color" value="rgb">
+                                <label for="rgb">RGB</label>
+                                <input type="radio" id="darkening" name="color" value="darkening">
+                                <label for="darkening">Darkening</label>
+                            </div>
+                            <div id="size-choice">  
+                                <input type="radio" id="square" name="shape" value="square">
+                                <label for="square">Square</label>
+                                <input type="radio" id="rectangle" name="shape" value="rectangle">
+                                <label for="square">Rectangle</label>
+                            </div>
+
                             <button id="submit">Start</button>
                         </div>
                     </div>

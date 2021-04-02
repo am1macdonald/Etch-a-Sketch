@@ -27,8 +27,6 @@ function makeGrid(num) {
     for(let i = 0; i < (num * num); i++) {
         let gridItemId = `gridItem${i}`;
         let clone = gridItem.cloneNode();
-        clone.style.Width = makeSquare(num);
-        clone.style.Height = makeSquare(num);
 
         switch(true) {
             case rgb.checked === true:

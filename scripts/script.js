@@ -12,8 +12,9 @@ function rgbRandom() {
     let rgbString = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
     this.style.backgroundColor = rgbString;
 };
-function makeSquare(){
-    let sqareSize;
+function makeSquare(num){
+    let sqareSize = (grid.offsetWidth) / num;
+    return `${sqareSize}px`;
 };
 //makes a bunch of copies of the divisions for the game grid, adds the appropriate attributes and appends to the grid.
 function makeGrid(num) {
@@ -26,6 +27,8 @@ function makeGrid(num) {
     for(let i = 0; i < (num * num); i++) {
         let gridItemId = `gridItem${i}`;
         let clone = gridItem.cloneNode();
+        clone.style.Width = makeSquare(num);
+        clone.style.Height = makeSquare(num);
 
         switch(true) {
             case rgb.checked === true:

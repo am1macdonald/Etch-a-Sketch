@@ -16,7 +16,7 @@ function rgbRandom() {
 function makeGrid(num) {
     let rgb = document.getElementById("rgb");
     let black = document.getElementById("black");
-    let darkening = document.getElementById("darkening");
+    //let darkening = document.getElementById("darkening");
     let gridItem = document.createElement("div");
     gridItem.classList.add("grid-item");
     grid.style.gridTemplateColumns = `repeat(${num}, 1fr)`;

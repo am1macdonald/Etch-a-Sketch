@@ -12,10 +12,6 @@ function rgbRandom() {
     let rgbString = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
     this.style.backgroundColor = rgbString;
 };
-function makeSquare(num){
-    let sqareSize = (grid.offsetWidth) / num;
-    return `${sqareSize}px`;
-};
 //makes a bunch of copies of the divisions for the game grid, adds the appropriate attributes and appends to the grid.
 function makeGrid(num) {
     let rgb = document.getElementById("rgb");
@@ -27,7 +23,6 @@ function makeGrid(num) {
     for(let i = 0; i < (num * num); i++) {
         let gridItemId = `gridItem${i}`;
         let clone = gridItem.cloneNode();
-
         switch(true) {
             case rgb.checked === true:
                 clone.addEventListener("mouseover", rgbRandom);
@@ -35,9 +30,6 @@ function makeGrid(num) {
             case black.checked === true:
                 clone.setAttribute("onmouseover", "this.style.backgroundColor = 'black'");
                 break;
-            case darkening === true:
-                break
-
         };
         grid.appendChild(clone);
     };

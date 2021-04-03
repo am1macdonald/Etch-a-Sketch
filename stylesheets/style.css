@@ -35,10 +35,7 @@ body{
     font-family: 'Exo 2', sans-serif;
 }
 #color-choice{
-    margin-top: 2vmin;
-}
-#size-choice{
-    margin: 2vmin 0;
+    margin: 2vmin 0 ;
 }
 #grid-size-input{
     text-align: center;
